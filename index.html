@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Nurlan Dadashov's Portfolio.</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <!-- <div id="loading">
+        <div id="spinner"></div>
+    </div> -->
+        <div id="particles-js"></div>
+        <!-- <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div> -->
+        <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a> -->
+        <a id="about" onclick="showabout()" class="animated fadeIn">about</a>
+        <a id="work" onclick="showwork()" class="animated fadeIn">projects</a>
+        <a id="contact" onclick="showcontact()" class="animated fadeIn"
+            >contact</a
+        >
+        <div
+            id="middle"
+            class="animated slideInDown"
+            style="animation-delay: 2s"
+        >
+            <h2 style="font-size: 1.3em">Hello world,</h2>
+            <h1 style="margin-top: 0">I'm Nurlan Dadashov.</h1>
+            <h2>Front-end Developer</h2>
+            <div id="menu">
+                <a onclick="showabout()">about</a>
+                <a onclick="showcontact()">contact</a>
+                <a onclick="showwork()">work</a>
+            </div>
+            <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay: 2s">
+                        <a
+                            class="social"
+                            href="mailto:nurlandadashov2002@yahoo.com"
+                            ><i class="fas fa-envelope"></i
+                        ></a>
+                    </td>
+                    <td class="animated zoomIn" style="animation-delay: 2s">
+                        <a
+                            class="social"
+                            href="https://github.com/nurlan2002"
+                            target="_blank"
+                            rel="noopener"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                    </td>
+                    <td class="animated zoomIn" style="animation-delay: 2s">
+                        <a
+                            class="social"
+                            href="https://www.linkedin.com/in/nurlan-dadashov-4005361a6/"
+                            target="_blank"
+                            rel="noopener"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="work_container" class="container">
+            <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+            <h1>projects.</h1>
+            <section>
+                <h2>Cranberry - Full-stack ecommerce App</h2>
+                <p>
+                    This one is my biggest personal project so far. Users can
+                    filter products based on category, brand, price range,
+                    select a size and add that product to checkout. User need to
+                    first create an account then verify their email, in order to
+                    proceed to checkout. After successfully signing up, users
+                    need to provide some personal and shipping information,
+                    which they can do either in their personal account page or
+                    while checking out. After that they can enter card
+                    information and finalize their order.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firebase</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Material UI</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Stripe</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>Cranberry Admin</h2>
+                <p>
+                    This project contains admin dashboard, products and orders
+                    controllers of the above Cranberry ecommerce app. Some of
+                    its functionalities include adding products, editing
+                    products, uploading product photos, etc. These are
+                    accomplished by making requests to FireStore Database and
+                    Firebase Storage. UI was developed with Semantic UI React.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Firebase</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div>
+                        <i class="fas fa-circle"></i>&nbsp;Semantic UI React
+                    </div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Blog</h2>
+                <p>
+                    This blog was developed for sharing tips about bicycles. It
+                    utilizes Masonry.js jQuery plugin for cascading grid layout
+                    and Bootstrap general UI styling.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;jQuery</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Bootstrap</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Bicycle Description</h2>
+                <p>
+                    The goal was to create a template to generate static
+                    descriptions of bicycles. I accomplished this by using
+                    React. Given an input object React would generate static
+                    description of that bicycle. Then, output html was copied to
+                    the main website. I wrote custom CSS that made the
+                    description match the initial design provided by the
+                    company. More than 50 such descriptions were created. The
+                    Live Website shows only one example.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;jQuery</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Accessory Description</h2>
+                <p>
+                    These pages use the same method as the above bicycle
+                    descriptions, generating static html files from input object
+                    using React. Hundreds of such accessory descriptions were
+                    created. The Live Website shows only one example.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;jQuery</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Category Description</h2>
+                <p>
+                    These beautiful pages describe categories of bicycles. I
+                    wrote custom CSS that matched exactly the required design.
+                    Approximately 20 such category pages were developed. The
+                    Live Website shows only one example.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Guide</h2>
+                <p>
+                    This type of pages contain useful information about how
+                    choose a bicycle. A few such pages were created, and you can
+                    see one of them using Live Website button.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY About Us/Contact Us</h2>
+                <p>
+                    Relatively simple pages that contain information about the
+                    company and how a customer can contact them.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>TREK TURKEY Trek Trakya Team</h2>
+                <p>
+                    TREK TURKEY is official sponsor of Trek Trakya team. So they
+                    asked me to design and develop a page dedicated to that
+                    team.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+            <section>
+                <h2>
+                    Azerbaijan Robotics Clubs Association (ARCA) landing page
+                    concept
+                </h2>
+                <p>
+                    This is one of my earlier projects. My friends decided to
+                    create Robotics clubs across universities of Azerbaijan and
+                    asked me to develop a website for them. Unfortunately, their
+                    project was put on hold because of pandemic.
+                </p>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Bootstrap</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                </div>
+                <button class="btn_one">Live Website</button>
+                <button class="btn_two">Source Code</button>
+            </section>
+        </div>
+        <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>About me</h2>
+                <p>
+                    My name is Nurlan and I’m a Junior Front-End Developer. My
+                    current goal is to find an internship where I will deepen
+                    and improve previously acquired programming skills, engage
+                    in interesting and creative projects and raise my Front-End
+                    development qualifications. Mainly I want to focus on
+                    mastering React and JavaScript.
+                </p>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <p>
+                    I am studying Computer Engineering at Bogazici University.
+                    Bogazici is a pestigious university located in Istanbul,
+                    Turkey. I am on my sophomer year, and my current GPA is
+                    3.54. I am studying at Bogazici University via
+                    TurkishScholarships Program, which is a competitive
+                    scholarship program with more than 100000 applicants every
+                    year.
+                </p>
+            </section>
+            <section>
+                <h2>Technologies I use</h2>
+                <p>
+                    HTML5, CSS3, JavaScript, React, jQuery, Firebase, Material
+                    UI, Semantic UI, Bootstrap.
+                </p>
+                <p>
+                    You can find more about how I used the above technologies in
+                    "Projects" section.
+                </p>
+            </section>
+            <section>
+                <h2>Work experience</h2>
+                <ul class="timeline">
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">
+                                September 2020 - Present
+                            </p>
+                            <h3>TREK BICYCLE TURKEY</h3>
+                            <h4>Freelance Web Developer</h4>
+                            <p>
+                                Focus: Frontend Development<br />Development of
+                                responsive and adaptive websites with HTML5,
+                                CSS, jQuery; optimized for desktops, smartphones
+                                and tablets (iOS, Android, Windows).
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div id="contact_container" class="container">
+            <div onclick="closecontact()">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <h1>contact.</h1>
+            <section>
+                <form name="contact-form" netlify>
+                    <input type="hidden" name="contact_number" />
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        required
+                        name="user_name"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                        name="user_email"
+                    /><br />
+                    <textarea
+                        placeholder="Your message"
+                        required
+                        rows="5"
+                        name="message"
+                    ></textarea>
+                    <br />
+                    <button type="submit" class="btn_one">Send</button>
+                </form>
+            </section>
+        </div>
+        <div id="footer">
+            <button class="btn_one">Resume</button>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
