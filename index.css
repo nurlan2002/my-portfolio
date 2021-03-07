@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-itrems: center;
+    align-items: center;
 }
 #spinner {
     animation: rotate 0.56s infinite linear;
