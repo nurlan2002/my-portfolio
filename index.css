@@ -16,6 +16,11 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 #loading {
     width: 100vw;
     height: 100vh;
