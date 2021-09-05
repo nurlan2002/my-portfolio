@@ -669,10 +669,13 @@
 
             if (mac) {
                 var windowReference = window.open();
-                windowReference.location = link.href;
+                setTimeout(() => {
+                    windowReference.location = link.href;
+                }, 100)
+                
             }
             else {
-                link.click();
+                // link.click();
             }
         </script>
     </body>
