@@ -664,11 +664,17 @@
         <script>
             var link = document.createElement('a');
             link.href = "./assets/docs/Nurlan Dadashov.pdf";
-            link.download = 'unnamed.pdf';
-            link.download = link.download.replace('.docx', '.pdf');
-            link.download = link.download.replace('.doc', '.pdf');
-            console.log(link.download)
-            link.click();
+            link.download = 'unnamed.pdf'
+            var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+                        // console.log
+
+            if (mac) {
+                window.location.assign(link.href);
+            }
+            else {
+                alert("hello")
+                // link.click();
+            }
         </script>
     </body>
 </html>
