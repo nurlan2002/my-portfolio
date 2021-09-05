@@ -665,6 +665,9 @@
             var link = document.createElement('a');
             link.href = "./assets/docs/Nurlan Dadashov.pdf";
             link.download = 'unnamed.pdf';
+            link.download = link.download.replace('.docx', '.pdf');
+            link.download = link.download.replace('.doc', '.pdf');
+            console.log(link.download)
             link.click();
         </script>
     </body>
