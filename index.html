@@ -665,13 +665,21 @@
             var link = document.createElement('a');
             link.href = "./assets/docs/Nurlan Dadashov.pdf";
             link.download = 'unnamed.pdf'
+            link.classList.add("btn_one")
+
+            
+
             var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
 
             if (mac) {
-                var windowReference = window.open();
-                setTimeout(() => {
-                    windowReference.location = link.href;
-                }, 100)
+                var footer = document.getElementById("footer")
+
+                footer.append(link)
+
+                // var windowReference = window.open();
+                // setTimeout(() => {
+                //     windowReference.location = link.href;
+                // }, 100)
                 
             }
             else {
